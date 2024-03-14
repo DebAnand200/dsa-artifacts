@@ -27,8 +27,10 @@ public class HCFLCM {
 
         //Calculation of HCF using Euclidean Algorithm
         int hcf = calculateHCF(num1, num2);
-
+        //Calculation of LCM using formula LCM = (num1 * num2) / HCF
+        int lcm = (num1 * num2) / hcf;
         System.out.println("HCF Of "+ num1 + " and "+ num2 +" is: "+hcf);
+        System.out.println("LCM Of "+ num1 + " and "+ num2 +" is: "+lcm);
     }
 
     private static int calculateHCF(int num1, int num2) {
